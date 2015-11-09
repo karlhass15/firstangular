@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Fun with Angular</title>
+
+    <link rel="stylesheet" href="/vendors/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/app.js"></script>
+</head>
+<body>
+<div class="container" ng-controller="ZetaMessages">
+<div class="jumbotron"></div>
+
+<h2> Zeta Message Board</h2>
+
+<form id="personMessage">
+
+<input ng-model="note.name" type="text" id="personName" name="personName" placeholder="Enter Name">
+
+<input ng-model="note.message" type="text" id="inputMessage" name="inputMessage" placeholder="Enter Message">
+</form>
+
+    <button ng-click="clickButton(note)" id="submitPersonMessage" class="btn btn-info">Submit Message</button>
+
+
+    <h2>Zeta Messages</h2>
+    <div ng-repeat="people in messageArray">
+        <div class="col-md-2 well">
+            <p class="lead">{{people.name}}</p>
+            <p class="lead">{{people.message}}</p>
+
+        </div>
+
+    </div>
+
+
+
+<div id="messageContainer"></div>
+</div>
+</body>
+</html>

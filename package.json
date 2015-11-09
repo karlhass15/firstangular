@@ -1,0 +1,21 @@
+{
+  "name": "messagebrd",
+  "version": "1.0.0",
+  "description": "Wkend 5 Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "body-parser": "^1.14.1",
+    "bootstrap": "^3.3.5",
+    "express": "^4.13.3",
+    "path": "^0.12.7",
+    "pg": "^4.4.3"
+  },
+  "devDependencies": {}
+}
